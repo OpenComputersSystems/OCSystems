@@ -14,5 +14,5 @@ shell.run("openp/github", "get", file_path, args[2])
 shell.setAlias("startup", args[2])
 
 
-github usage:
-openp/github get username/reponame/branch/path <filename>
+--github usage:
+--openp/github get username/reponame/branch/path <filename>
