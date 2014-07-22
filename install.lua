@@ -6,9 +6,9 @@ if not args[1] and not args[2] then
   return
 end
 
-local file_path = "ComputerCraftSystems/CCSystems/master/lua"
+local file_path = "ComputerCraftSystems/CCSystems/master/lua/"
 
-file_path = file_path + args[1] + args[2]
+file_path = file_path..args[1].."/"..args[2]..".lua"
 
 shell.run("openp/github", "get", file_path, args[2])
 shell.setAlias("startup", args[2])
