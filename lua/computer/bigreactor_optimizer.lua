@@ -40,7 +40,7 @@ reactor = peripheral.wrap(reactor_side)
 math.randomseed(os.time())
 num_control_rods = reactor.getNumberOfControlRods()
 reactor.setAllControlRodLevels(0)
-sleep(settle)
+sleep(settle_time)
 best_efficiency = calculateFuelEfficiency(reactor)
 best_efficiency_level = 0
 efficiencies = {}
@@ -51,7 +51,7 @@ efficiencies = {}
 
 for i=1,99 do
   reactor.setAllControlRodLevels(i)
-  sleep(settle)
+  sleep(settle_time)
   efficiencies[i]=calculateFuelEfficiency(reactor)
   if efficiencies[i] > best_efficiency then
     print("Found new best efficiency of "..efficiencies[i].." RF/mB at level "..i)
