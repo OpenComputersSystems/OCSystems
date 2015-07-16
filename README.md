@@ -1,9 +1,9 @@
-CCSystems
+OCSystems
 =========
 
-ComputerCraft Systems is a collection of scripts I use in computercraft to make certain tasks easier or to automate systems in a minecraft world.
+OpenComputers Systems is a collection of scripts I use in the Minecraft mod OpenComputers to make certain tasks easier or to automate systems in a minecraft world.
 
-To install a program, you can either install directly with the github command from openperipherals (or your own github script), or use the install script.  The install script uses the openp/github command, so be sure to have that available.  Some of these scripts will not work without openperipherals.
+Since this repository is in the process of being ported from ComputerCraft, many things will not work correctly until the porting is done.
 
 To get the install script, run the command github get ComputerCraftSystems/CCSystems/master/install.lua install
 
